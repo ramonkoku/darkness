@@ -25,8 +25,10 @@ class Jogador:
             print(f"{self.nome} não possui o item '{item}' no inventário.")
 
     def status_inventario(self):
-
-        print(f"Inventário de {self.nome}: {', '.join(self.__inventario)}")
+        if self.__inventario:
+            print(f"Inventário de {self.nome}: {', '.join(self.__inventario)}")
+        else:
+            print(f"Inventário de {self.nome} está vazio.")
 
 #uso
 jogador1 = Jogador("Beatrix")
@@ -34,20 +36,19 @@ jogador2 = Jogador("makeda")
 jogador3 = Jogador("Yzma")
 jogador4 = Jogador("Marack")
 
-# jogador1
-jogador1.adicionar_item("rosas vermelhas")
 
-# jogador2
+# Adicionar itens sem exibir mensagens
+jogador1.adicionar_item("rosas vermelhas")
 jogador2.adicionar_item("cajado da atrofia")
 jogador2.adicionar_item("livro da verdade")
-jogador2.adicionar_item("3 pergaminho de água")
+jogador2.adicionar_item("3 pergaminhos de água")
 jogador2.adicionar_item("1 pergaminho de ar")
-jogador2.adicionar_item("2 pergaminho de fogo")
-
-# jogador3
+jogador2.adicionar_item("2 pergaminhos de fogo")
 jogador3.adicionar_item("chicote (cauda da medusa)")
 
-# status dos inventarios
+# Status dos inventários
+print()
 jogador1.status_inventario()
 jogador2.status_inventario()
 jogador3.status_inventario()
+jogador4.status_inventario()
