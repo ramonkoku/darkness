@@ -34,16 +34,11 @@ jogador3 = Jogador("Yzma", 7, 100, 6666, 10000, 60, 60, 70, 50, 70, 35, 50)
 jogador4 = Jogador("Marack", 5, 100, 4500, 1000, 80, 70, 75, 50, 70, 60, 80)
 
 def mostrar_informacao(opcao):
-    if opcao == 1:
-        jogador1.exibir_informacoes()
-    elif opcao == 2:
-        jogador2.exibir_informacoes()
-    elif opcao == 3:
-        jogador3.exibir_informacoes()
-    elif opcao == 4:
-        jogador4.exibir_informacoes()
-    else:
-        print("Opção inválida. Por favor, escolha entre 1 e 4.")
+    if opcao == 1: jogador1.exibir_informacoes()
+    elif opcao == 2: jogador2.exibir_informacoes()
+    elif opcao == 3: jogador3.exibir_informacoes()
+    elif opcao == 4: jogador4.exibir_informacoes()
+    else: print("Opção inválida. Por favor, escolha entre 1 e 4.")
 
 def main():
     while True:
