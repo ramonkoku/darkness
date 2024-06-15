@@ -28,10 +28,10 @@ class Jogador:
         print(f"Reflexo: {self.reflexo}")
 
 
-jogador1 = Jogador("Beatrix", 1, 80, 1700, 3000, 20, 40, 60, 30, 30, 80, 25)
-jogador2 = Jogador("Makeda", 6, 100, 1500, 999999, 40, 80, 50, 30, 100, 10, 40)
-jogador3 = Jogador("Yzma", 7, 100, 6666, 10000, 60, 60, 70, 50, 70, 35, 50)
-jogador4 = Jogador("Marack", 5, 100, 4500, 1000, 80, 70, 75, 50, 70, 60, 80)
+jogador1 = Jogador("Beatrix (yamin)", 1, 80, 1700, 3000, 20, 40, 60, 30, 30, 80, 25)
+jogador2 = Jogador("Makeda (makeda)", 6, 100, 1500, 999999, 40, 80, 50, 30, 100, 10, 40)
+jogador3 = Jogador("Yzma (bianca)", 7, 100, 6666, 10000, 60, 60, 70, 50, 70, 35, 50)
+jogador4 = Jogador("Marack (matheus)", 5, 100, 4500, 1000, 80, 70, 75, 50, 70, 60, 80)
 
 def mostrar_informacao(opcao):
     if opcao == 1: jogador1.exibir_informacoes()
