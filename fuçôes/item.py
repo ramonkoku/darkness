@@ -4,10 +4,13 @@ class Jogador:
         self.nome = nome
         self.__inventario = []
 
-    def adicionar_item(self, item):
+    def item_atuais (self, item):
 
         self.__inventario.append(item)
-        print(f"{self.nome} pegou o item '{item}'.")
+
+    def itens_adicionados(self):
+        for item in self.__inventario:
+            print(f"{self.nome} pegou o item '{item}'.")
 
     def usar_item(self, item):
         
@@ -38,13 +41,15 @@ jogador4 = Jogador("Marack")
 
 
 # Adicionar itens sem exibir mensagens
-jogador1.adicionar_item("rosas vermelhas")
-jogador2.adicionar_item("cajado da atrofia")
-jogador2.adicionar_item("livro da verdade")
-jogador2.adicionar_item("3 pergaminho de água")
-jogador2.adicionar_item("1 pergaminho de ar")
-jogador2.adicionar_item("2 pergaminhos de fogo")
-jogador3.adicionar_item("chicote (cauda da medusa)")
+jogador1.item_atuais("rosas vermelhas")
+jogador2.item_atuais("cajado da atrofia")
+jogador2.item_atuais("livro da verdade")
+jogador2.item_atuais("3 pergaminhos de água")
+jogador2.item_atuais("1 pergaminho de ar")
+jogador2.item_atuais("2 pergaminhos de fogo")
+jogador3.item_atuais("chicote (cauda da medusa)")
+jogador4.item_atuais("orbe (dominio das armas)")
+jogador4.item_atuais("foice (sede de sangue)")
 
 # Status dos inventários
 print()
