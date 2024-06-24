@@ -21,17 +21,5 @@ class Personagem:
 # area dos jogadores
 jogador1 = Personagem()
 
-
-
-for atributo in jogador1.atributos:
-    jogador1.aumentar_atributo(atributo)
-
-
-tributo = 'Carisma'
-valor_desejado = 12
-while True:
-    jogador1.aumentar_atributo(atributo)
-    if jogador1.atributos[atributo] >= valor_desejado:
-        break
-
+jogador1.aumentar_atributo("força")
 jogador1.mostrar_atributos()
